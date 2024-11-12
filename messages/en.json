@@ -1,0 +1,15 @@
+{
+  "HomePage": {
+    "salutation": "Hi, im wolf",
+    "im": "I",
+    "job": "m software engineer",
+    "description": "solve problems with technology.",
+    "about": " I'm a software engineer with a passion for technology and problem solving. I love to learn new things and share my knowledge with others.",
+    "btn-work": "Projects"
+  },
+  "HeaderNotification": {
+    "text": "This website is under construction, you can check the source code on",
+    "link": "Github",
+    "href": "https://github.com/MurilloWolf/wolves"
+  }
+}

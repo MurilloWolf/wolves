@@ -18,17 +18,16 @@ export default function HeaderNotification(props: HeaderNotificationProps) {
 
   const handleClose = () => {
     setTransition(true);
-    console.log("transition");
     setTimeout(() => {
       setIsOpen(false);
-    }, 300);
+    }, 100);
   };
 
   return (
     <>
       {isOpen && (
         <div
-          className={`flex justify-center items-center w-full isolated bg-green-600 text-white transition-all ease-in-out duration-300  ${
+          className={`flex justify-center items-center w-full isolated bg-blue-500 text-white transition-all ease-in-out duration-300  ${
             transition ? "h-0" : "h-12"
           }`}
         >

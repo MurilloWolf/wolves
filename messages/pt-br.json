@@ -1,0 +1,15 @@
+{
+  "HomePage": {
+    "salutation": "Oi, eu sou o Wolf",
+    "im": "Eu",
+    "job": "sou engenheiro de software",
+    "description": "resolvo problemas com tecnologia.",
+    "about": "Sou um engenheiro de software com uma paixão por tecnologia e resolução de problemas. Adoro aprender coisas novas e compartilhar meu conhecimento com os outros.",
+    "btn-work": "Projetos"
+  },
+  "HeaderNotification": {
+    "text": "Este site está em construção, você pode verificar o código fonte no",
+    "link": "Github",
+    "href": "https://github.com/MurilloWolf/wolves"
+  }
+}
