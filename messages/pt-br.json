@@ -11,5 +11,13 @@
     "text": "Este site está em construção, você pode verificar o código fonte no",
     "link": "Github",
     "href": "https://github.com/MurilloWolf/wolves"
+  },
+  "Header": {
+    "Language": "Idioma"
+  },
+  "ProjectsPage": {
+    "title": "Projetos em que trabalhei",
+    "description": "Alguns projetos são publicos, você pode ver mais detalhes clicando neles.",
+    "btn": "Ver mais"
   }
 }
