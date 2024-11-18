@@ -1,4 +1,6 @@
-import Header from "./Header";
-import HeaderNotification from "./HeaderNotification";
 import SEO from "./SEO";
-export { Header, HeaderNotification, SEO };
+import Header from "./Header";
+import ProjectCard from "./ProjectCard";
+import HeaderNotification from "./HeaderNotification";
+
+export { Header, HeaderNotification, SEO, ProjectCard };
