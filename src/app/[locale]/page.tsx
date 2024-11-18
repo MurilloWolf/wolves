@@ -1,12 +1,21 @@
 "use client";
+
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, FolderGit2 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { useRouter } from "@/i18n/routing";
 
-export default function Home() {
-  const t = useTranslations("HomePage");
+export default function HomePage() {
+  const getText = useTranslations("HomePage");
+
+  const router = useRouter();
+
   const redirectTo = (url: string) => {
+    if (url.startsWith("/")) {
+      router.push(url);
+      return;
+    }
     window.open(url, "_blank");
   };
 
@@ -16,23 +25,25 @@ export default function Home() {
         <section className="flex flex-1 flex-col-reverse gap-4 md:flex-row justify-evenly items-center md:p-10">
           <div className="flex flex-col justify-evenly gap-4 md:px-10 flex-1">
             <h1 className="text-blue-500 text-2xl uppercase font-semibold">
-              {t("salutation")}
+              {getText("salutation")}
             </h1>
             <h2 className="text-gray-200 text-4xl md:max-w-80">
-              {t("im")}
+              {getText("im")}
               <span className="line-through px-1 text-3xl text-blue-400">
-                {t("job")}
+                {getText("job")}
               </span>{" "}
-              {t("description")}
+              {getText("description")}
             </h2>
-            <p className="text-gray-400 text-lg md:max-w-96">{t("about")}</p>
+            <p className="text-gray-400 text-lg md:max-w-96">
+              {getText("about")}
+            </p>
             <div className="flex  gap-4">
               <Button
                 className="bg-blue-600 hover:bg-blue-500 text-md max-w-44 text-wrap min-w-44"
-                onClick={() => redirectTo("")}
+                onClick={() => redirectTo("/projects")}
               >
                 <FolderGit2 strokeWidth={1} className="mr-2" />
-                {t("btn-work")}
+                {getText("btn-work")}
               </Button>
               <Button
                 onClick={() => redirectTo("https://github.com/MurilloWolf")}
