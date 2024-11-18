@@ -27,11 +27,11 @@ export default function HeaderNotification(props: HeaderNotificationProps) {
     <>
       {isOpen && (
         <div
-          className={`flex justify-center items-center w-full isolated bg-blue-500 text-white transition-all ease-in-out duration-300  ${
+          className={`px-4 md:px-0 flex justify-center items-center w-full isolated bg-blue-500 text-white transition-all ease-in-out duration-300  ${
             transition ? "h-0" : "h-12"
           }`}
         >
-          <p className="font-light text-sm cursor-pointer">
+          <p className="font-light text-sm cursor-pointer text-center">
             {text}
             {link && (
               <Link className="font-bold underline mx-1" href={link.href}>
